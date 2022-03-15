@@ -15,6 +15,9 @@
 		1B884B3327E119F9003D981D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B884B3127E119F9003D981D /* LaunchScreen.storyboard */; };
 		1B884B3E27E119F9003D981D /* ProGitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B3D27E119F9003D981D /* ProGitHubTests.swift */; };
 		1B884B4927E119F9003D981D /* ProGitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B4827E119F9003D981D /* ProGitHubUITests.swift */; };
+		344144B7DF8165DA93997E81 /* Pods_ProGitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */; };
+		509B76DA336DAAADC97D16EE /* Pods_ProGitHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */; };
+		BAF27246E90D0F5012F968EE /* Pods_ProGitHub_ProGitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		1B884B4427E119F9003D981D /* ProGitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProGitHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B884B4827E119F9003D981D /* ProGitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProGitHubUITests.swift; sourceTree = "<group>"; };
 		1B884B4A27E119F9003D981D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DF817844C6B9EB85E9D6681 /* Pods-ProGitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub.release.xcconfig"; path = "Target Support Files/Pods-ProGitHub/Pods-ProGitHub.release.xcconfig"; sourceTree = "<group>"; };
+		319691400123026D164CB995 /* Pods-ProGitHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHubTests.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHubTests/Pods-ProGitHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHub_ProGitHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6066B386717306EB8CFBBA /* Pods-ProGitHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHubTests.release.xcconfig"; path = "Target Support Files/Pods-ProGitHubTests/Pods-ProGitHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		8667FE3BD7F03C0F72568F3A /* Pods-ProGitHub-ProGitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-ProGitHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2F28A9FDE5351A300C22E4 /* Pods-ProGitHub-ProGitHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-ProGitHubUITests.release.xcconfig"; path = "Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3D83CD6FF69DB9404B1B50 /* Pods-ProGitHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHub/Pods-ProGitHub.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344144B7DF8165DA93997E81 /* Pods_ProGitHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509B76DA336DAAADC97D16EE /* Pods_ProGitHubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF27246E90D0F5012F968EE /* Pods_ProGitHub_ProGitHubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				1B884B3C27E119F9003D981D /* ProGitHubTests */,
 				1B884B4727E119F9003D981D /* ProGitHubUITests */,
 				1B884B2427E119ED003D981D /* Products */,
+				ACC564EECD47ADE53516F3AE /* Pods */,
+				E0E76F961CB43E272FE3C804 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = ProGitHubUITests;
 			sourceTree = "<group>";
 		};
+		ACC564EECD47ADE53516F3AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D83CD6FF69DB9404B1B50 /* Pods-ProGitHub.debug.xcconfig */,
+				2DF817844C6B9EB85E9D6681 /* Pods-ProGitHub.release.xcconfig */,
+				8667FE3BD7F03C0F72568F3A /* Pods-ProGitHub-ProGitHubUITests.debug.xcconfig */,
+				8B2F28A9FDE5351A300C22E4 /* Pods-ProGitHub-ProGitHubUITests.release.xcconfig */,
+				319691400123026D164CB995 /* Pods-ProGitHubTests.debug.xcconfig */,
+				6E6066B386717306EB8CFBBA /* Pods-ProGitHubTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0E76F961CB43E272FE3C804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */,
+				64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */,
+				CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B884B4D27E119F9003D981D /* Build configuration list for PBXNativeTarget "ProGitHub" */;
 			buildPhases = (
+				71E3CC32D1DBA231D10A61A3 /* [CP] Check Pods Manifest.lock */,
 				1B884B1F27E119ED003D981D /* Sources */,
 				1B884B2027E119ED003D981D /* Frameworks */,
 				1B884B2127E119ED003D981D /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B884B5027E119F9003D981D /* Build configuration list for PBXNativeTarget "ProGitHubTests" */;
 			buildPhases = (
+				8EDD3782F36EBD812029B9D4 /* [CP] Check Pods Manifest.lock */,
 				1B884B3527E119F9003D981D /* Sources */,
 				1B884B3627E119F9003D981D /* Frameworks */,
 				1B884B3727E119F9003D981D /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B884B5327E119F9003D981D /* Build configuration list for PBXNativeTarget "ProGitHubUITests" */;
 			buildPhases = (
+				29FBFECD540E36FB72C145D7 /* [CP] Check Pods Manifest.lock */,
 				1B884B4027E119F9003D981D /* Sources */,
 				1B884B4127E119F9003D981D /* Frameworks */,
 				1B884B4227E119F9003D981D /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29FBFECD540E36FB72C145D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProGitHub-ProGitHubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E3CC32D1DBA231D10A61A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProGitHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EDD3782F36EBD812029B9D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProGitHubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B884B1F27E119ED003D981D /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		1B884B4E27E119F9003D981D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3D83CD6FF69DB9404B1B50 /* Pods-ProGitHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +566,7 @@
 		};
 		1B884B4F27E119F9003D981D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF817844C6B9EB85E9D6681 /* Pods-ProGitHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +586,7 @@
 		};
 		1B884B5127E119F9003D981D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319691400123026D164CB995 /* Pods-ProGitHubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +609,7 @@
 		};
 		1B884B5227E119F9003D981D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6066B386717306EB8CFBBA /* Pods-ProGitHubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +632,7 @@
 		};
 		1B884B5427E119F9003D981D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8667FE3BD7F03C0F72568F3A /* Pods-ProGitHub-ProGitHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +653,7 @@
 		};
 		1B884B5527E119F9003D981D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2F28A9FDE5351A300C22E4 /* Pods-ProGitHub-ProGitHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
