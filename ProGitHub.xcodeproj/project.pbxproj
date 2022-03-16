@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		088D40E1DE903E33DBFF6478 /* Pods_ProGitHub_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844235D95601E9BA33356FD /* Pods_ProGitHub_Infra.framework */; };
+		1B67E63427E2454A00DA0208 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67E63327E2454A00DA0208 /* ApiService.swift */; };
+		1B67E64927E2458F00DA0208 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67E64827E2458F00DA0208 /* ApiServiceTests.swift */; };
 		1B884B2727E119ED003D981D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2627E119ED003D981D /* AppDelegate.swift */; };
 		1B884B2927E119ED003D981D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2827E119ED003D981D /* SceneDelegate.swift */; };
 		1B884B2B27E119ED003D981D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2A27E119ED003D981D /* ViewController.swift */; };
@@ -22,7 +24,6 @@
 		1BB3DB5727E12A2E00F538D2 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3DB5127E12A2E00F538D2 /* RobotoCondensed-Regular.ttf */; };
 		1BB3DB5827E12A2E00F538D2 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3DB5227E12A2E00F538D2 /* RobotoCondensed-Bold.ttf */; };
 		1BB3DB7A27E12E6500F538D2 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB3DB7127E12E6400F538D2 /* Infra.framework */; };
-		1BB3DB7F27E12E6500F538D2 /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */; };
 		1BB3DB8127E12E6500F538D2 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB3DB7327E12E6400F538D2 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BB3DB8F27E12F7000F538D2 /* HttpGetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3DB8E27E12F7000F538D2 /* HttpGetClient.swift */; };
 		1BB3DBAA27E131F000F538D2 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB3DBA827E131F000F538D2 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B67E63327E2454A00DA0208 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		1B67E64827E2458F00DA0208 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 		1B884B2327E119ED003D981D /* ProGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B884B2627E119ED003D981D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B884B2827E119ED003D981D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		1BB3DB7327E12E6400F538D2 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
 		1BB3DB7427E12E6400F538D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BB3DB7927E12E6500F538D2 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		1BB3DB8027E12E6500F538D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BB3DB8E27E12F7000F538D2 /* HttpGetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetClient.swift; sourceTree = "<group>"; };
 		1BB3DBA627E131F000F538D2 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B67E63127E244F100DA0208 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				1B67E63327E2454A00DA0208 /* ApiService.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		1B67E65027E2459F00DA0208 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				1B67E64827E2458F00DA0208 /* ApiServiceTests.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		1B884B1A27E119ED003D981D = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +246,7 @@
 		1BB3DB7227E12E6400F538D2 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				1B67E63127E244F100DA0208 /* Http */,
 				1BB3DB8D27E12EC700F538D2 /* Protocols */,
 				1BB3DB7327E12E6400F538D2 /* Infra.h */,
 				1BB3DB7427E12E6400F538D2 /* Info.plist */,
@@ -238,7 +257,7 @@
 		1BB3DB7D27E12E6500F538D2 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
-				1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */,
+				1B67E65027E2459F00DA0208 /* Http */,
 				1BB3DB8027E12E6500F538D2 /* Info.plist */,
 			);
 			path = InfraTests;
@@ -457,6 +476,7 @@
 					};
 					1BB3DB7827E12E6500F538D2 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1BB3DBA527E131F000F538D2 = {
 						CreatedOnToolsVersion = 12.4;
@@ -696,6 +716,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B67E63427E2454A00DA0208 /* ApiService.swift in Sources */,
 				1BB3DB8F27E12F7000F538D2 /* HttpGetClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,7 +725,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB3DB7F27E12E6500F538D2 /* InfraTests.swift in Sources */,
+				1B67E64927E2458F00DA0208 /* ApiServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1059,6 +1080,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R75SA9L9QH;
@@ -1072,6 +1094,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "InfraTests/InfraTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1080,6 +1104,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R75SA9L9QH;
@@ -1093,6 +1118,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "InfraTests/InfraTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
