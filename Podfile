@@ -5,8 +5,8 @@ target 'ProGitHub' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'lottie-ios'
-  pod 'RxSwift', '6.5.0'
-  pod 'RxCocoa', '6.5.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # Pods for ProGitHub
 
@@ -17,6 +17,11 @@ target 'ProGitHub' do
 
   target 'ProGitHubUITests' do
     # Pods for testing
+  end
+  
+  target 'Infra' do
+    pod 'RxSwift'
+    pod 'RxCocoa'
   end
 
 end

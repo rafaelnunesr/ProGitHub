@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088D40E1DE903E33DBFF6478 /* Pods_ProGitHub_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844235D95601E9BA33356FD /* Pods_ProGitHub_Infra.framework */; };
 		1B884B2727E119ED003D981D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2627E119ED003D981D /* AppDelegate.swift */; };
 		1B884B2927E119ED003D981D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2827E119ED003D981D /* SceneDelegate.swift */; };
 		1B884B2B27E119ED003D981D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B884B2A27E119ED003D981D /* ViewController.swift */; };
@@ -20,6 +21,12 @@
 		1BB3DB5627E12A2E00F538D2 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3DB5027E12A2E00F538D2 /* RobotoCondensed-LightItalic.ttf */; };
 		1BB3DB5727E12A2E00F538D2 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3DB5127E12A2E00F538D2 /* RobotoCondensed-Regular.ttf */; };
 		1BB3DB5827E12A2E00F538D2 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3DB5227E12A2E00F538D2 /* RobotoCondensed-Bold.ttf */; };
+		1BB3DB7A27E12E6500F538D2 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB3DB7127E12E6400F538D2 /* Infra.framework */; };
+		1BB3DB7F27E12E6500F538D2 /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */; };
+		1BB3DB8127E12E6500F538D2 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB3DB7327E12E6400F538D2 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB3DB8F27E12F7000F538D2 /* HttpGetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3DB8E27E12F7000F538D2 /* HttpGetClient.swift */; };
+		1BB3DBAA27E131F000F538D2 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB3DBA827E131F000F538D2 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB3DBB627E1328B00F538D2 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3DBB527E1328B00F538D2 /* GithubRepository.swift */; };
 		344144B7DF8165DA93997E81 /* Pods_ProGitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */; };
 		509B76DA336DAAADC97D16EE /* Pods_ProGitHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */; };
 		BAF27246E90D0F5012F968EE /* Pods_ProGitHub_ProGitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */; };
@@ -39,6 +46,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1B884B2227E119ED003D981D;
 			remoteInfo = ProGitHub;
+		};
+		1BB3DB7B27E12E6500F538D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B884B1B27E119ED003D981D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BB3DB7027E12E6400F538D2;
+			remoteInfo = Infra;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,13 +76,27 @@
 		1BB3DB5027E12A2E00F538D2 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		1BB3DB5127E12A2E00F538D2 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		1BB3DB5227E12A2E00F538D2 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		1BB3DB7127E12E6400F538D2 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB3DB7327E12E6400F538D2 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
+		1BB3DB7427E12E6400F538D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB3DB7927E12E6500F538D2 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
+		1BB3DB8027E12E6500F538D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB3DB8E27E12F7000F538D2 /* HttpGetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetClient.swift; sourceTree = "<group>"; };
+		1BB3DBA627E131F000F538D2 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB3DBA827E131F000F538D2 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		1BB3DBA927E131F000F538D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB3DBB527E1328B00F538D2 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
 		2DF817844C6B9EB85E9D6681 /* Pods-ProGitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub.release.xcconfig"; path = "Target Support Files/Pods-ProGitHub/Pods-ProGitHub.release.xcconfig"; sourceTree = "<group>"; };
 		319691400123026D164CB995 /* Pods-ProGitHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHubTests.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHubTests/Pods-ProGitHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55D342FF69E228F5D08C2E70 /* Pods-ProGitHub-Infra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-Infra.release.xcconfig"; path = "Target Support Files/Pods-ProGitHub-Infra/Pods-ProGitHub-Infra.release.xcconfig"; sourceTree = "<group>"; };
 		64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHub_ProGitHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6066B386717306EB8CFBBA /* Pods-ProGitHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHubTests.release.xcconfig"; path = "Target Support Files/Pods-ProGitHubTests/Pods-ProGitHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		7EFEFACBE11EC53A7CE33B6D /* Pods-ProGitHub-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-Infra.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHub-Infra/Pods-ProGitHub-Infra.debug.xcconfig"; sourceTree = "<group>"; };
 		8667FE3BD7F03C0F72568F3A /* Pods-ProGitHub-ProGitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-ProGitHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B2F28A9FDE5351A300C22E4 /* Pods-ProGitHub-ProGitHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub-ProGitHubUITests.release.xcconfig"; path = "Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F844235D95601E9BA33356FD /* Pods_ProGitHub_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHub_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProGitHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3D83CD6FF69DB9404B1B50 /* Pods-ProGitHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProGitHub.debug.xcconfig"; path = "Target Support Files/Pods-ProGitHub/Pods-ProGitHub.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +126,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BB3DB6E27E12E6400F538D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088D40E1DE903E33DBFF6478 /* Pods_ProGitHub_Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DB7627E12E6500F538D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DB7A27E12E6500F538D2 /* Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DBA327E131F000F538D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +158,9 @@
 				1B884B2527E119ED003D981D /* ProGitHub */,
 				1B884B3C27E119F9003D981D /* ProGitHubTests */,
 				1B884B4727E119F9003D981D /* ProGitHubUITests */,
+				1BB3DB7227E12E6400F538D2 /* Infra */,
+				1BB3DB7D27E12E6500F538D2 /* InfraTests */,
+				1BB3DBA727E131F000F538D2 /* Data */,
 				1B884B2427E119ED003D981D /* Products */,
 				ACC564EECD47ADE53516F3AE /* Pods */,
 				E0E76F961CB43E272FE3C804 /* Frameworks */,
@@ -119,6 +173,9 @@
 				1B884B2327E119ED003D981D /* ProGitHub.app */,
 				1B884B3927E119F9003D981D /* ProGitHubTests.xctest */,
 				1B884B4427E119F9003D981D /* ProGitHubUITests.xctest */,
+				1BB3DB7127E12E6400F538D2 /* Infra.framework */,
+				1BB3DB7927E12E6500F538D2 /* InfraTests.xctest */,
+				1BB3DBA627E131F000F538D2 /* Data.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +225,51 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		1BB3DB7227E12E6400F538D2 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				1BB3DB8D27E12EC700F538D2 /* Protocols */,
+				1BB3DB7327E12E6400F538D2 /* Infra.h */,
+				1BB3DB7427E12E6400F538D2 /* Info.plist */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		1BB3DB7D27E12E6500F538D2 /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BB3DB7E27E12E6500F538D2 /* InfraTests.swift */,
+				1BB3DB8027E12E6500F538D2 /* Info.plist */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		1BB3DB8D27E12EC700F538D2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1BB3DB8E27E12F7000F538D2 /* HttpGetClient.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1BB3DBA727E131F000F538D2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1BB3DBB427E1325A00F538D2 /* Models */,
+				1BB3DBA827E131F000F538D2 /* Data.h */,
+				1BB3DBA927E131F000F538D2 /* Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1BB3DBB427E1325A00F538D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BB3DBB527E1328B00F538D2 /* GithubRepository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACC564EECD47ADE53516F3AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +279,8 @@
 				8B2F28A9FDE5351A300C22E4 /* Pods-ProGitHub-ProGitHubUITests.release.xcconfig */,
 				319691400123026D164CB995 /* Pods-ProGitHubTests.debug.xcconfig */,
 				6E6066B386717306EB8CFBBA /* Pods-ProGitHubTests.release.xcconfig */,
+				7EFEFACBE11EC53A7CE33B6D /* Pods-ProGitHub-Infra.debug.xcconfig */,
+				55D342FF69E228F5D08C2E70 /* Pods-ProGitHub-Infra.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -187,11 +291,31 @@
 				FCA1E9C3B42F7257EC5217CB /* Pods_ProGitHub.framework */,
 				64DD6F8AEB7F2A3F663E72CB /* Pods_ProGitHub_ProGitHubUITests.framework */,
 				CB8438199CF60AC4C1BAA98F /* Pods_ProGitHubTests.framework */,
+				F844235D95601E9BA33356FD /* Pods_ProGitHub_Infra.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BB3DB6C27E12E6400F538D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DB8127E12E6500F538D2 /* Infra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DBA127E131F000F538D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DBAA27E131F000F538D2 /* Data.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1B884B2227E119ED003D981D /* ProGitHub */ = {
@@ -202,6 +326,7 @@
 				1B884B1F27E119ED003D981D /* Sources */,
 				1B884B2027E119ED003D981D /* Frameworks */,
 				1B884B2127E119ED003D981D /* Resources */,
+				8BF4FF02B0ACF87691F02427 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +364,7 @@
 				1B884B4027E119F9003D981D /* Sources */,
 				1B884B4127E119F9003D981D /* Frameworks */,
 				1B884B4227E119F9003D981D /* Resources */,
+				1C91842E3A2B6877712FC262 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +375,61 @@
 			productName = ProGitHubUITests;
 			productReference = 1B884B4427E119F9003D981D /* ProGitHubUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1BB3DB7027E12E6400F538D2 /* Infra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB3DB8227E12E6500F538D2 /* Build configuration list for PBXNativeTarget "Infra" */;
+			buildPhases = (
+				28C9BA0D6A8C7A3519E0ACF0 /* [CP] Check Pods Manifest.lock */,
+				1BB3DB6C27E12E6400F538D2 /* Headers */,
+				1BB3DB6D27E12E6400F538D2 /* Sources */,
+				1BB3DB6E27E12E6400F538D2 /* Frameworks */,
+				1BB3DB6F27E12E6400F538D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = 1BB3DB7127E12E6400F538D2 /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BB3DB7827E12E6500F538D2 /* InfraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB3DB8527E12E6500F538D2 /* Build configuration list for PBXNativeTarget "InfraTests" */;
+			buildPhases = (
+				1BB3DB7527E12E6500F538D2 /* Sources */,
+				1BB3DB7627E12E6500F538D2 /* Frameworks */,
+				1BB3DB7727E12E6500F538D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BB3DB7C27E12E6500F538D2 /* PBXTargetDependency */,
+			);
+			name = InfraTests;
+			productName = InfraTests;
+			productReference = 1BB3DB7927E12E6500F538D2 /* InfraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BB3DBA527E131F000F538D2 /* Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB3DBAD27E131F000F538D2 /* Build configuration list for PBXNativeTarget "Data" */;
+			buildPhases = (
+				1BB3DBA127E131F000F538D2 /* Headers */,
+				1BB3DBA227E131F000F538D2 /* Sources */,
+				1BB3DBA327E131F000F538D2 /* Frameworks */,
+				1BB3DBA427E131F000F538D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Data;
+			productName = Data;
+			productReference = 1BB3DBA627E131F000F538D2 /* Data.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -270,6 +451,17 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 1B884B2227E119ED003D981D;
 					};
+					1BB3DB7027E12E6400F538D2 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					1BB3DB7827E12E6500F538D2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1BB3DBA527E131F000F538D2 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
 				};
 			};
 			buildConfigurationList = 1B884B1E27E119ED003D981D /* Build configuration list for PBXProject "ProGitHub" */;
@@ -288,6 +480,9 @@
 				1B884B2227E119ED003D981D /* ProGitHub */,
 				1B884B3827E119F9003D981D /* ProGitHubTests */,
 				1B884B4327E119F9003D981D /* ProGitHubUITests */,
+				1BB3DB7027E12E6400F538D2 /* Infra */,
+				1BB3DB7827E12E6500F538D2 /* InfraTests */,
+				1BB3DBA527E131F000F538D2 /* Data */,
 			);
 		};
 /* End PBXProject section */
@@ -322,9 +517,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BB3DB6F27E12E6400F538D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DB7727E12E6500F538D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DBA427E131F000F538D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C91842E3A2B6877712FC262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProGitHub-ProGitHubUITests/Pods-ProGitHub-ProGitHubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28C9BA0D6A8C7A3519E0ACF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProGitHub-Infra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		29FBFECD540E36FB72C145D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +622,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BF4FF02B0ACF87691F02427 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProGitHub/Pods-ProGitHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProGitHub/Pods-ProGitHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProGitHub/Pods-ProGitHub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8EDD3782F36EBD812029B9D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -420,6 +692,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BB3DB6D27E12E6400F538D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DB8F27E12F7000F538D2 /* HttpGetClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DB7527E12E6500F538D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DB7F27E12E6500F538D2 /* InfraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BB3DBA227E131F000F538D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB3DBB627E1328B00F538D2 /* GithubRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,6 +728,11 @@
 			isa = PBXTargetDependency;
 			target = 1B884B2227E119ED003D981D /* ProGitHub */;
 			targetProxy = 1B884B4527E119F9003D981D /* PBXContainerItemProxy */;
+		};
+		1BB3DB7C27E12E6500F538D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BB3DB7027E12E6400F538D2 /* Infra */;
+			targetProxy = 1BB3DB7B27E12E6500F538D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -691,6 +992,174 @@
 			};
 			name = Release;
 		};
+		1BB3DB8327E12E6500F538D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EFEFACBE11EC53A7CE33B6D /* Pods-ProGitHub-Infra.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R75SA9L9QH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BB3DB8427E12E6500F538D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D342FF69E228F5D08C2E70 /* Pods-ProGitHub-Infra.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R75SA9L9QH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.Infra;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BB3DB8627E12E6500F538D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R75SA9L9QH;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1BB3DB8727E12E6500F538D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R75SA9L9QH;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.InfraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1BB3DBAB27E131F000F538D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BB3DBAC27E131F000F538D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -726,6 +1195,33 @@
 			buildConfigurations = (
 				1B884B5427E119F9003D981D /* Debug */,
 				1B884B5527E119F9003D981D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB3DB8227E12E6500F538D2 /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB3DB8327E12E6500F538D2 /* Debug */,
+				1BB3DB8427E12E6500F538D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB3DB8527E12E6500F538D2 /* Build configuration list for PBXNativeTarget "InfraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB3DB8627E12E6500F538D2 /* Debug */,
+				1BB3DB8727E12E6500F538D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BB3DBAD27E131F000F538D2 /* Build configuration list for PBXNativeTarget "Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB3DBAB27E131F000F538D2 /* Debug */,
+				1BB3DBAC27E131F000F538D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
