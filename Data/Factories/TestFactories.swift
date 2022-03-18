@@ -18,7 +18,7 @@ func makeGihubRepositoriesMock() -> GithubRepositories {
     repositories.append(GithubRepository(id: 1,
                                          name: "some repository",
                                          description: "just another repository",
-                                         avatarUrl: "https://some-link.com",
+                                         userAvatarUrl: "https://some-link.com",
                                          userUrl: "https://another-link.com",
                                          language: "Fortrain",
                                          stargazers: 200,

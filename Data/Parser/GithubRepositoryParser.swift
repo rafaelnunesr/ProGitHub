@@ -22,7 +22,7 @@ public struct GithubRepositoryParser {
                 repositories.append(GithubRepository(id: repo["id"].intValue,
                                                      name: repo["name"].stringValue,
                                                      description: repo["description"].stringValue,
-                                                     avatarUrl: repo["owner"]["avatar_url"].stringValue,
+                                                     userAvatarUrl: repo["owner"]["avatar_url"].stringValue,
                                                      userUrl: repo["owner"]["url"].stringValue,
                                                      language: repo["language"].stringValue,
                                                      stargazers: repo["targazers_count"].intValue,

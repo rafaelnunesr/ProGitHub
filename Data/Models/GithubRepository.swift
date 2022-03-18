@@ -13,7 +13,7 @@ public struct GithubRepository: Model {
     public let id: Int
     public let name: String
     public let description: String
-    public let avatarUrl: String
+    public let userAvatarUrl: String
     public let userUrl: String
     public let language: String
     public let stargazers: Int
@@ -23,7 +23,7 @@ public struct GithubRepository: Model {
     public init(id: Int,
                 name: String,
                 description: String,
-                avatarUrl: String,
+                userAvatarUrl: String,
                 userUrl: String,
                 language: String,
                 stargazers: Int,
@@ -32,7 +32,7 @@ public struct GithubRepository: Model {
         self.id = id
         self.name = name
         self.description = description
-        self.avatarUrl = avatarUrl
+        self.userAvatarUrl = userAvatarUrl
         self.userUrl = userUrl
         self.language = language
         self.stargazers = stargazers
