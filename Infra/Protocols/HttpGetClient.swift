@@ -10,5 +10,5 @@ import RxSwift
 import Data
 
 public protocol HttpGetClient {
-    func fetchRepositories(withUrl: URL) -> Observable<GithubRepository>
+    func fetchRepositories(withUrl url: URL) -> Observable<GithubRepositories>
 }

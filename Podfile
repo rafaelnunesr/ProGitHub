@@ -7,6 +7,7 @@ target 'ProGitHub' do
   pod 'lottie-ios'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SwiftyJSON'
 
   # Pods for ProGitHub
 
@@ -19,9 +20,20 @@ target 'ProGitHub' do
     # Pods for testing
   end
   
+  target 'Data' do
+    pod 'SwiftyJSON'
+  end
+  
   target 'Infra' do
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'SwiftyJSON'
+  end
+  
+  target 'InfraTests' do
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SwiftyJSON'
   end
 
 end

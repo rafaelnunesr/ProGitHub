@@ -1,16 +1,18 @@
 PODS:
-  - lottie-ios (3.2.2)
-  - RxCocoa (6.1.0):
-    - RxRelay (= 6.1.0)
-    - RxSwift (= 6.1.0)
-  - RxRelay (6.1.0):
-    - RxSwift (= 6.1.0)
-  - RxSwift (6.1.0)
+  - lottie-ios (3.3.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - lottie-ios
   - RxCocoa
   - RxSwift
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
-  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
-  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
-  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 73d09df52c3a2b2c5491dbc50fbc7c0f9c0a6451
+PODFILE CHECKSUM: 905af7920ef341f1f764b3a92a061791ca7d34c4
 
 COCOAPODS: 1.10.0
