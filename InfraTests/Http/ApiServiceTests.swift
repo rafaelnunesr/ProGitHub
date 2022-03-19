@@ -38,12 +38,12 @@ class ApiServiceTests: XCTestCase {
 }
 
 extension ApiServiceTests {
-    func makeSut(file: StaticString = #filePath, line: UInt = #line) -> ApiServiceMock {
+    func makeSut() -> ApiServiceMock {
         let sut = ApiServiceMock.shared
         return sut
     }
     
-    func testRequestForRepositories(withUrl url: URL, withResult result: RepositoriesResults) -> Observable<GithubRepositories> {
+    func testRequestForRepositories(withUrl url: URL, withResult result: RepositoriesResults, file: StaticString = #filePath, line: UInt = #line) -> Observable<GithubRepositories> {
         let sut = makeSut()
         sut.result = result
         return sut.fetchRepositories(withUrl: url)

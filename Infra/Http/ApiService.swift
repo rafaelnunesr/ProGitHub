@@ -22,9 +22,27 @@ public class ApiService: HttpGetClient {
                     observer.onError(_error)
                 }
                 
-                if let _data = data, let json = try? JSON(data: _data) {
-                    let dataParsed = GithubRepositoryParser.parseGithubRepositories(with: json)
-                    observer.onNext(dataParsed)
+                if let responseHttp = response as? HTTPURLResponse,
+                   let _data = data {
+                    switch responseHttp.statusCode {
+                    case 200...299:
+                        guard let json = try? JSON(data: _data) else {
+                            observer.onError(HttpError.badRequest)
+                            return
+                        }
+                        let dataParsed = GithubRepositoryParser.parseGithubRepositories(with: json)
+                        observer.onNext(dataParsed)
+                    case 401:
+                        observer.onError(HttpError.unauthorized)
+                    case 403:
+                        observer.onError(HttpError.forbidden)
+                    case 400...499:
+                        observer.onError(HttpError.badRequest)
+                    case 500...509:
+                        observer.onError(HttpError.serverError)
+                    default:
+                        observer.onError(HttpError.noConnectivity)
+                    }
                 }
                 observer.onCompleted()
             }
