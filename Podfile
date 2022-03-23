@@ -32,11 +32,5 @@ target 'ProGitHub' do
     pod 'RxCocoa'
     pod 'SwiftyJSON'
   end
-  
-  target 'InfraTests' do
-    pod 'RxSwift'
-    pod 'RxCocoa'
-    pod 'SwiftyJSON'
-  end
 
 end
