@@ -8,6 +8,7 @@ target 'ProGitHub' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SwiftyJSON'
+  pod 'RealmSwift'
 
   # Pods for ProGitHub
 
@@ -22,6 +23,8 @@ target 'ProGitHub' do
   
   target 'Data' do
     pod 'SwiftyJSON'
+    pod 'RealmSwift'
+    pod 'RealmSwift'
   end
   
   target 'Infra' do

@@ -5,6 +5,8 @@
 //  Created by Rafael Nunes Rios on 3/18/22.
 //
 
-import Foundation
+import UIKit
 
-public typealias RepositoriesResults = Result<GithubRepositories, HttpError>?
+//public typealias RepositoriesResults<T> = Result<T, HttpError>?
+
+//public typealias RepositoriesResults = Result<[GithubRepository], HttpError>?

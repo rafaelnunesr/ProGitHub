@@ -9,11 +9,11 @@ import Foundation
 import SwiftyJSON
 
 public struct GithubRepositoryParser {
-    public static func parseGithubRepositories(with json: JSON) -> GithubRepositories {
-        return GithubRepositories(repositories: parseGithubRepository(with: json))
+    public static func parseUserName(with json: JSON) -> String {
+        return json[""].stringValue
     }
-    
-    private static func parseGithubRepository(with json: JSON) -> [GithubRepository] {
+
+    public static func parseGithubRepository(with json: JSON) -> [GithubRepository] {
         var repositories: [GithubRepository] = []
         
         if let repos = json["items"].array {
@@ -22,12 +22,13 @@ public struct GithubRepositoryParser {
                 repositories.append(GithubRepository(id: repo["id"].intValue,
                                                      name: repo["name"].stringValue,
                                                      description: repo["description"].stringValue,
-                                                     userAvatarUrl: repo["owner"]["avatar_url"].stringValue,
-                                                     userUrl: repo["owner"]["url"].stringValue,
                                                      language: repo["language"].stringValue,
-                                                     stargazers: repo["targazers_count"].intValue,
+                                                     stars: repo["stargazers_count"].intValue,
                                                      forks: repo["forks"].intValue,
-                                                     login: repo["owner"]["login"].stringValue))
+                                                     ownerUserAvatarUrl: repo["owner"]["avatar_url"].stringValue,
+                                                     ownerUserUrl: repo["owner"]["url"].stringValue,
+                                                     ownerNickname: repo["owner"]["login"].stringValue,
+                                                     repositoryOwnerType: repo["owner"]["type"].stringValue))
             }
         }
         

@@ -9,42 +9,43 @@ import Foundation
 
 public protocol Model: Equatable {}
 
+public enum RepositoryOwnerType {
+    case user
+    case organization
+    case other
+}
+
 public struct GithubRepository: Model {
     public let id: Int
     public let name: String
     public let description: String
-    public let userAvatarUrl: String
-    public let userUrl: String
     public let language: String
-    public let stargazers: Int
+    public let stars: Int
     public let forks: Int
-    public let login: String
+    public let ownerUserAvatarUrl: String
+    public let ownerUserUrl: String
+    public let ownerNickname: String
+    public let repositoryOwnerType: String
     
     public init(id: Int,
                 name: String,
                 description: String,
-                userAvatarUrl: String,
-                userUrl: String,
                 language: String,
-                stargazers: Int,
+                stars: Int,
                 forks: Int,
-                login: String) {
+                ownerUserAvatarUrl: String,
+                ownerUserUrl: String,
+                ownerNickname: String,
+                repositoryOwnerType: String) {
         self.id = id
         self.name = name
         self.description = description
-        self.userAvatarUrl = userAvatarUrl
-        self.userUrl = userUrl
         self.language = language
-        self.stargazers = stargazers
+        self.stars = stars
         self.forks = forks
-        self.login = login
-    }
-}
-
-public struct GithubRepositories: Model {
-    public let repositories: [GithubRepository]
-    
-    public init(repositories: [GithubRepository]) {
-        self.repositories = repositories
+        self.ownerUserAvatarUrl = ownerUserAvatarUrl
+        self.ownerUserUrl = ownerUserUrl
+        self.ownerNickname = ownerNickname
+        self.repositoryOwnerType = repositoryOwnerType
     }
 }

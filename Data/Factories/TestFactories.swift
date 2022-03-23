@@ -8,23 +8,23 @@
 import Foundation
 import Data
 
-func makeURL() -> URL {
-    return URL(string: "https://any-url.com")!
+func makeValidUrlAsString() -> String {
+    return "https://any-url.com"
 }
 
-func makeGihubRepositoriesMock() -> GithubRepositories {
+func makeGihubRepositoriesMock() -> [GithubRepository] {
     var repositories: [GithubRepository] = []
     
     repositories.append(GithubRepository(id: 1,
                                          name: "some repository",
                                          description: "just another repository",
-                                         userAvatarUrl: "https://some-link.com",
-                                         userUrl: "https://another-link.com",
                                          language: "Fortrain",
-                                         stargazers: 200,
-                                         forks: 400,
-                                         login: "just a login"))
+                                         stars: 200,
+                                         forks: 100,
+                                         ownerUserAvatarUrl: "https://some-link.com",
+                                         ownerUserUrl: "https://another-link.com",
+                                         ownerNickname: "Club",
+                                         repositoryOwnerType: "User"))
     
-    return GithubRepositories(repositories: repositories)
+    return repositories
 }
-

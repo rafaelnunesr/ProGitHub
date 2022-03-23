@@ -8,33 +8,36 @@
 import Foundation
 
 public struct GithubPullRequest: Model {
-    let title: String
-    let description: String
-    let userAvatarUrl: String
-    let userName: String
-    let userFullName: String
-    let isOpen: Bool
+    public let title: String
+    public let description: String
+    public let pullRequestLink: String
+    public let isOpen: Bool
+    public let ownerAvatarUrl: String
+    public let ownerNickname: String
+    public let repositoryOwnerType: String
     
     public init(title: String,
                 description: String,
+                pullRequestLink: String,
                 isOpen: Bool,
-                userAvatarUrl: String,
-                userName: String,
-                userFullName: String) {
+                ownerAvatarUrl: String,
+                ownerNickname: String,
+                repositoryOwnerType: String) {
         self.title = title
         self.description = description
+        self.pullRequestLink = pullRequestLink
         self.isOpen = isOpen
-        self.userAvatarUrl = userAvatarUrl
-        self.userName = userName
-        self.userFullName = userFullName
+        self.ownerAvatarUrl = ownerAvatarUrl
+        self.ownerNickname = ownerNickname
+        self.repositoryOwnerType = repositoryOwnerType
         
     }
 }
 
 public struct GithubPullRequests: Model {
-    let pullRequests: [GithubPullRequest]
-    let totalOpen: Int
-    let totalClosed: Int
+    public let pullRequests: [GithubPullRequest]
+    public let totalOpen: Int
+    public let totalClosed: Int
     
     public init(pullRequests: [GithubPullRequest], totalOpen: Int, totalClosed: Int) {
         self.pullRequests = pullRequests

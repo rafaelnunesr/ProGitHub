@@ -7,15 +7,17 @@
 
 import Foundation
 import RxSwift
-import Data
 import SwiftyJSON
+import Data
 
-public class ApiService: HttpGetClient {
+public class ApiService {
     
     static public let shared = ApiService()
+
+    private let repositoriesBaseURL = "https://api.github.com/search/repositories"
+    private let pullRequestsBaseURL = "https://api.github.com/repos/"
     
-    public func fetchRepositories(withUrl url: URL) -> Observable<GithubRepositories> {
-        
+    private func getData(withUrl url: URL) -> Observable<Data> {
         return Observable.create { observer in
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let _error = error {
@@ -26,12 +28,7 @@ public class ApiService: HttpGetClient {
                    let _data = data {
                     switch responseHttp.statusCode {
                     case 200...299:
-                        guard let json = try? JSON(data: _data) else {
-                            observer.onError(HttpError.badRequest)
-                            return
-                        }
-                        let dataParsed = GithubRepositoryParser.parseGithubRepositories(with: json)
-                        observer.onNext(dataParsed)
+                        observer.onNext(_data)
                     case 401:
                         observer.onError(HttpError.unauthorized)
                     case 403:
@@ -52,5 +49,34 @@ public class ApiService: HttpGetClient {
                 task.cancel()
             }
         }
+    }
+
+    public func fetchRepositories(language: String, page: Int) -> Observable<[GithubRepository]> {
+        let url = "\(repositoriesBaseURL)?q=language:\(language)&sort=stars&page=\(page)"
+        guard let safeURL = URL(string: url) else { return Observable.empty() }
+        return getData(withUrl: safeURL).flatMap { [weak self] data -> Observable<[GithubRepository]> in
+            guard let _ = self else { return Observable.empty() }
+            guard let json = try? JSON(data: data) else {
+                return Observable.error(HttpError.badRequest)
+            }
+            return Observable.just(GithubRepositoryParser.parseGithubRepository(with: json))
+        }
+    }
+    
+    public func fetchPullRequests(user: String, repository: String) -> Observable<GithubPullRequests> {
+        let url = "\(pullRequestsBaseURL)\(user)" + "/" + "\(repository)" + "/" + "pulls"
+        guard let safeURL = URL(string: url) else { return Observable.empty() }
+        return getData(withUrl: safeURL).flatMap { [weak self] data -> Observable<GithubPullRequests> in
+            guard let _ = self else { return Observable.empty() }
+            guard let json = try? JSON(data: data) else {
+                return Observable.error(HttpError.badRequest)
+            }
+            return Observable.just(GithubPullRequestParser.parseGithubPullRequest(with: json))
+        }
+    }
+
+    public func fetchProfileImage(withUrl url: String) -> Observable<Data> {
+        guard let safeURL = URL(string: url) else { return Observable.empty() }
+        return getData(withUrl: safeURL)
     }
 }
