@@ -15,7 +15,7 @@ populares de diversas linguagens e mostrar a lista de pull requests. </p>
 
 <h2>Como rodar o aplicativo</h2>
 
-Para rodar o projeto é necessário ter instalado na máquina o GIT, Xcode 11 ou superior e CocoaPods.
+Para rodar o projeto é necessário ter instalado na máquina o GIT, Xcode 12.4 ou superior e CocoaPods.
 
 ```
 # Clone este repositório
